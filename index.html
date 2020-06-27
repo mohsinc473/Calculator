@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container container-xl container-lg container-md container-sm">
+    <div class="input-group input-group-lg my-5">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Calculate</span>
+        </div>
+        <input type="text" placeholder="Expression" class="form-control"  id="screen">
+      </div>
+          
+      <div class="m-2">
+        <button type="button" class="btn  btn-warning" onclick="clear()">C</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('/')">/</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('*')">x</button>
+        <button type="button" class="btn  btn-warning" onclick="remove()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-backspace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+        </svg></button>
+      </div>
+
+      <div class="m-2">
+        <button type="button" class="btn  btn-warning" onclick="calulator('Math.pow(')">pow</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('Math.cos(')">cos</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('Math.tan(')">tan</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('Math.sqrt(')">sqrt</button>
+      </div>
+
+
+
+
+      <div class="m-2">
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('7')">7</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('8')">8</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('9')">9</button>
+        <button type="button" class="btn btn-warning" onclick="calulator('-')">-</button>
+      </div>
+      <div class="m-2">
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('4')">4</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('5')">5</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('6')">6</button>
+        <button type="button" class="btn  btn-warning" onclick="calulator('+')">+</button>
+      </div>
+      <div class="m-2">
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('1')">1</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('2')">2</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('3')">3</button>
+        <button type="button" class="btn  btn-warning" id="calBtn" onclick="calulator('*100/')">%</button>
+      </div>
+      <div class="m-2">
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('0')">0</button>
+        <button type="button" class="btn btn-outline-secondary btn-light" onclick="calulator('.')">.</button>
+        <button type="button" class="btn  calBtn btn-warning" onclick="result()">=</button>
+      </div>
+
+    </div>  
+
+</body>
+
+
+<script src="calculator.js"></script>
+</html>

@@ -1,0 +1,15 @@
+body {
+    background-image: url("https://media1.tenor.com/images/7b9dcabbef60d4857f55402ff0dd104c/tenor.gif?itemid=7945156");
+}
+.container{
+    width: 60% !important;
+}
+.btn{
+    width: 22% !important;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.calBtn{
+    width: 44.4% !important;
+}
